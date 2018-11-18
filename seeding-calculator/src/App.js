@@ -63,7 +63,6 @@ class App extends Component {
   }
 
   render() {
-    debugger;
     let seedingAmount = this.calculateNewSeedingAmounts();
     return (
       <div className="App">
@@ -73,7 +72,7 @@ class App extends Component {
         </div>
         <div className="odds-row">
           <div className="odds-row-elt">
-            Team 1 Implied Prob %:
+            Team 1 American Odds:
             <input name="team1Odds" onChange={this.handleChange} value={this.state.team1Odds} type="text" />
           </div>
           <div>
@@ -82,7 +81,7 @@ class App extends Component {
         </div>
         <div className="odds-row">
           <div className="odds-row-elt">
-            Team 2 Implied Prob %:
+            Team 2 American Odds:
             <input name="team2Odds" onChange={this.handleChange} value={this.state.team2Odds} type="text" />
           </div>
           <div>
@@ -91,7 +90,7 @@ class App extends Component {
         </div>
         <div className="odds-row">
           <div className="odds-row-elt">
-            Draw Implied Prob %: (leave blank if N/A):
+            Draw American Odds: (leave blank if N/A):
             <input name="drawOdds" onChange={this.handleChange} value={this.state.drawOdds} type="text" />
           </div>
           <div>
